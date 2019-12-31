@@ -26,5 +26,4 @@ The dataset directory is to be structured in this Format
 Running the file creates a "trained.h5" file.  
 Feel free to tweak your own settings.
 
-Running the "testpothole.py" by modifying the variable image = load_image(<name_of_the_image>) will return 0 or 1 by predicting it.
-If it is a pothole it returns 0, If it is a road it prints out 1.
+Running the "testpothole.py" by modifying the load_image function's parameter will print the statement "This is a" + the prediction.
