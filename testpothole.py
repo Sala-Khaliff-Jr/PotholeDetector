@@ -1,7 +1,4 @@
-import tensorflow as tf
 from tensorflow import keras
-
-import cv2
 import numpy as np
 
 model = keras.models.load_model('trained.h5')
@@ -17,7 +14,7 @@ def load_image(img_path):
     img_tensor /= 255.                                      # imshow expects values in the range [0, 1]
     return img_tensor
 
-img = load_image('6.jpg')
+img = load_image('pothole.jpg')
 classes = model.predict_classes(img)
 
 print(classes)
