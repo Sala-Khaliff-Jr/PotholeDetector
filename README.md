@@ -6,7 +6,7 @@ This contains arount 330 images of potholes and roads
 https://www.kaggle.com/atulyakumar98/pothole-detection-dataset
 
 The dataset is strucctured in this format
---pothole-detection-dataset \n
+--pothole-detection-dataset 
   --normal
   --potholes
 
@@ -15,7 +15,7 @@ Place the 264 images from normal and potholes under Pothole and Road in Train fo
 
 The dataset directory is to be structured in this Format
 
-PotholeDatset\n
+PotholeDatset
 -- Train
   --Pothole
   --Road
