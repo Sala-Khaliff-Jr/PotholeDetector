@@ -13,8 +13,10 @@ def load_image(img_path):
     img_tensor = np.expand_dims(img_tensor, axis=0)         # (1, height, width, channels), add a dimension because the model expects this shape: (batch_size, height, width, channels)
     img_tensor /= 255.                                      # imshow expects values in the range [0, 1]
     return img_tensor
+# Chaange this parameter in load image to the custom image of your choice    
+img = load_image('road.jpg')
 
-img = load_image('pothole.jpg')
-classes = model.predict_classes(img)
+classes_index = model.predict_classes(img)
+labels = {0:"Pothole",1:"Road"}
 
-print(classes)
+print("This is a ",labels[classes_index[0][0]])
